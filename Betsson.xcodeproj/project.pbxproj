@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0586D27629006F6000E9D59E /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586D27529006F6000E9D59E /* PhotoService.swift */; };
+		0586D2792900701700E9D59E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586D2782900701700E9D59E /* Photo.swift */; };
+		0586D27B29007FC100E9D59E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586D27A29007FC100E9D59E /* PhotoCell.swift */; };
+		059895C72901D7C000989A41 /* PhotoDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059895C62901D7C000989A41 /* PhotoDetailsRouter.swift */; };
+		059895C92901D95B00989A41 /* PhotoServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059895C82901D95B00989A41 /* PhotoServiceMock.swift */; };
+		059895CC2901DFC200989A41 /* PhotoListStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059895CB2901DFC200989A41 /* PhotoListStub.swift */; };
+		059895D02901E0AF00989A41 /* PhotoListRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059895CF2901E0AF00989A41 /* PhotoListRobot.swift */; };
+		059895D32901E0D100989A41 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059895D22901E0D100989A41 /* XCUIElement+Extensions.swift */; };
+		05A2745128F80C0E000DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2745028F80C0E000DFA37 /* AppDelegate.swift */; };
+		05A2745328F80C0E000DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2745228F80C0E000DFA37 /* SceneDelegate.swift */; };
+		05A2745528F80C0E000DFA37 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2745428F80C0E000DFA37 /* PhotoListViewController.swift */; };
+		05A2745828F80C0E000DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A2745628F80C0E000DFA37 /* Main.storyboard */; };
+		05A2745A28F80C0F000DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A2745928F80C0F000DFA37 /* Assets.xcassets */; };
+		05A2746828F80C10000DFA37 /* BetssonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2746728F80C10000DFA37 /* BetssonTests.swift */; };
+		05A2747228F80C10000DFA37 /* BetssonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A2747128F80C10000DFA37 /* BetssonUITests.swift */; };
+		05F1D1E42901B658002A879D /* PhotoDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F1D1E32901B658002A879D /* PhotoDetailsView.xib */; };
+		05F1D1E62901B687002A879D /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1D1E52901B687002A879D /* PhotoDetailsViewController.swift */; };
+		05F1D1E92901CB42002A879D /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F1D1E82901CB42002A879D /* AlertPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05A2746428F80C10000DFA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A2744528F80C0E000DFA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A2744C28F80C0E000DFA37;
+			remoteInfo = Betsson;
+		};
+		05A2746E28F80C10000DFA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A2744528F80C0E000DFA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A2744C28F80C0E000DFA37;
+			remoteInfo = Betsson;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0586D27529006F6000E9D59E /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		0586D2782900701700E9D59E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		0586D27A29007FC100E9D59E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		059895C62901D7C000989A41 /* PhotoDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsRouter.swift; sourceTree = "<group>"; };
+		059895C82901D95B00989A41 /* PhotoServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoServiceMock.swift; sourceTree = "<group>"; };
+		059895CB2901DFC200989A41 /* PhotoListStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListStub.swift; sourceTree = "<group>"; };
+		059895CF2901E0AF00989A41 /* PhotoListRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListRobot.swift; sourceTree = "<group>"; };
+		059895D22901E0D100989A41 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
+		05A2744D28F80C0E000DFA37 /* Betsson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Betsson.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A2745028F80C0E000DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05A2745228F80C0E000DFA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05A2745428F80C0E000DFA37 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		05A2745728F80C0E000DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05A2745928F80C0F000DFA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05A2745E28F80C0F000DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A2746328F80C10000DFA37 /* BetssonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetssonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A2746728F80C10000DFA37 /* BetssonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetssonTests.swift; sourceTree = "<group>"; };
+		05A2746D28F80C10000DFA37 /* BetssonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetssonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A2747128F80C10000DFA37 /* BetssonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetssonUITests.swift; sourceTree = "<group>"; };
+		05F1D1E32901B658002A879D /* PhotoDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailsView.xib; sourceTree = "<group>"; };
+		05F1D1E52901B687002A879D /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		05F1D1E82901CB42002A879D /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05A2744A28F80C0E000DFA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2746028F80C10000DFA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2746A28F80C10000DFA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0586D27229006EE400E9D59E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0586D27A29007FC100E9D59E /* PhotoCell.swift */,
+				05F1D1E32901B658002A879D /* PhotoDetailsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0586D27329006F0100E9D59E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				05A2745028F80C0E000DFA37 /* AppDelegate.swift */,
+				05A2745228F80C0E000DFA37 /* SceneDelegate.swift */,
+				05A2745928F80C0F000DFA37 /* Assets.xcassets */,
+				05A2745E28F80C0F000DFA37 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		0586D27429006F4B00E9D59E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0586D27529006F6000E9D59E /* PhotoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0586D2772900700800E9D59E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0586D2782900701700E9D59E /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		059895CA2901DFB000989A41 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				059895CB2901DFC200989A41 /* PhotoListStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		059895CE2901E09900989A41 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				059895CF2901E0AF00989A41 /* PhotoListRobot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
+		059895D12901E0C200989A41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				059895D22901E0D100989A41 /* XCUIElement+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05A2744428F80C0E000DFA37 = {
+			isa = PBXGroup;
+			children = (
+				05A2744F28F80C0E000DFA37 /* Betsson */,
+				05A2746628F80C10000DFA37 /* BetssonTests */,
+				05A2747028F80C10000DFA37 /* BetssonUITests */,
+				05A2744E28F80C0E000DFA37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05A2744E28F80C0E000DFA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05A2744D28F80C0E000DFA37 /* Betsson.app */,
+				05A2746328F80C10000DFA37 /* BetssonTests.xctest */,
+				05A2746D28F80C10000DFA37 /* BetssonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05A2744F28F80C0E000DFA37 /* Betsson */ = {
+			isa = PBXGroup;
+			children = (
+				05F1D1ED2901D767002A879D /* Routers */,
+				05F1D1EC2901D72F002A879D /* View controllers */,
+				05F1D1EB2901D689002A879D /* Storyboards */,
+				0586D2772900700800E9D59E /* Models */,
+				0586D27429006F4B00E9D59E /* Services */,
+				0586D27329006F0100E9D59E /* Supporting files */,
+				0586D27229006EE400E9D59E /* Views */,
+			);
+			path = Betsson;
+			sourceTree = "<group>";
+		};
+		05A2746628F80C10000DFA37 /* BetssonTests */ = {
+			isa = PBXGroup;
+			children = (
+				059895CA2901DFB000989A41 /* Stubs */,
+				05F1D1EA2901D66E002A879D /* Mocks */,
+				05A2746728F80C10000DFA37 /* BetssonTests.swift */,
+			);
+			path = BetssonTests;
+			sourceTree = "<group>";
+		};
+		05A2747028F80C10000DFA37 /* BetssonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				059895D12901E0C200989A41 /* Extensions */,
+				059895CE2901E09900989A41 /* Robots */,
+				05A2747128F80C10000DFA37 /* BetssonUITests.swift */,
+			);
+			path = BetssonUITests;
+			sourceTree = "<group>";
+		};
+		05F1D1EA2901D66E002A879D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				059895C82901D95B00989A41 /* PhotoServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		05F1D1EB2901D689002A879D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				05A2745628F80C0E000DFA37 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		05F1D1EC2901D72F002A879D /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05A2745428F80C0E000DFA37 /* PhotoListViewController.swift */,
+				05F1D1E52901B687002A879D /* PhotoDetailsViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		05F1D1ED2901D767002A879D /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				05F1D1E82901CB42002A879D /* AlertPresenter.swift */,
+				059895C62901D7C000989A41 /* PhotoDetailsRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05A2744C28F80C0E000DFA37 /* Betsson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A2747728F80C10000DFA37 /* Build configuration list for PBXNativeTarget "Betsson" */;
+			buildPhases = (
+				05A2744928F80C0E000DFA37 /* Sources */,
+				05A2744A28F80C0E000DFA37 /* Frameworks */,
+				05A2744B28F80C0E000DFA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Betsson;
+			productName = Betsson;
+			productReference = 05A2744D28F80C0E000DFA37 /* Betsson.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05A2746228F80C10000DFA37 /* BetssonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A2747A28F80C10000DFA37 /* Build configuration list for PBXNativeTarget "BetssonTests" */;
+			buildPhases = (
+				05A2745F28F80C10000DFA37 /* Sources */,
+				05A2746028F80C10000DFA37 /* Frameworks */,
+				05A2746128F80C10000DFA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A2746528F80C10000DFA37 /* PBXTargetDependency */,
+			);
+			name = BetssonTests;
+			productName = BetssonTests;
+			productReference = 05A2746328F80C10000DFA37 /* BetssonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05A2746C28F80C10000DFA37 /* BetssonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A2747D28F80C10000DFA37 /* Build configuration list for PBXNativeTarget "BetssonUITests" */;
+			buildPhases = (
+				05A2746928F80C10000DFA37 /* Sources */,
+				05A2746A28F80C10000DFA37 /* Frameworks */,
+				05A2746B28F80C10000DFA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05A2746F28F80C10000DFA37 /* PBXTargetDependency */,
+			);
+			name = BetssonUITests;
+			productName = BetssonUITests;
+			productReference = 05A2746D28F80C10000DFA37 /* BetssonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05A2744528F80C0E000DFA37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					05A2744C28F80C0E000DFA37 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					05A2746228F80C10000DFA37 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 05A2744C28F80C0E000DFA37;
+					};
+					05A2746C28F80C10000DFA37 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 05A2744C28F80C0E000DFA37;
+					};
+				};
+			};
+			buildConfigurationList = 05A2744828F80C0E000DFA37 /* Build configuration list for PBXProject "Betsson" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05A2744428F80C0E000DFA37;
+			productRefGroup = 05A2744E28F80C0E000DFA37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05A2744C28F80C0E000DFA37 /* Betsson */,
+				05A2746228F80C10000DFA37 /* BetssonTests */,
+				05A2746C28F80C10000DFA37 /* BetssonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A2744B28F80C0E000DFA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F1D1E42901B658002A879D /* PhotoDetailsView.xib in Resources */,
+				05A2745A28F80C0F000DFA37 /* Assets.xcassets in Resources */,
+				05A2745828F80C0E000DFA37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2746128F80C10000DFA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2746B28F80C10000DFA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05A2744928F80C0E000DFA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F1D1E62901B687002A879D /* PhotoDetailsViewController.swift in Sources */,
+				0586D27629006F6000E9D59E /* PhotoService.swift in Sources */,
+				05A2745528F80C0E000DFA37 /* PhotoListViewController.swift in Sources */,
+				05A2745128F80C0E000DFA37 /* AppDelegate.swift in Sources */,
+				0586D2792900701700E9D59E /* Photo.swift in Sources */,
+				0586D27B29007FC100E9D59E /* PhotoCell.swift in Sources */,
+				059895C72901D7C000989A41 /* PhotoDetailsRouter.swift in Sources */,
+				05A2745328F80C0E000DFA37 /* SceneDelegate.swift in Sources */,
+				05F1D1E92901CB42002A879D /* AlertPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2745F28F80C10000DFA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059895C92901D95B00989A41 /* PhotoServiceMock.swift in Sources */,
+				059895CC2901DFC200989A41 /* PhotoListStub.swift in Sources */,
+				05A2746828F80C10000DFA37 /* BetssonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A2746928F80C10000DFA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059895D32901E0D100989A41 /* XCUIElement+Extensions.swift in Sources */,
+				05A2747228F80C10000DFA37 /* BetssonUITests.swift in Sources */,
+				059895D02901E0AF00989A41 /* PhotoListRobot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05A2746528F80C10000DFA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A2744C28F80C0E000DFA37 /* Betsson */;
+			targetProxy = 05A2746428F80C10000DFA37 /* PBXContainerItemProxy */;
+		};
+		05A2746F28F80C10000DFA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A2744C28F80C0E000DFA37 /* Betsson */;
+			targetProxy = 05A2746E28F80C10000DFA37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05A2745628F80C0E000DFA37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05A2745728F80C0E000DFA37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05A2747528F80C10000DFA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05A2747628F80C10000DFA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05A2747828F80C10000DFA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Betsson/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.Betsson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05A2747928F80C10000DFA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Betsson/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.Betsson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05A2747B28F80C10000DFA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.BetssonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betsson.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Betsson";
+			};
+			name = Debug;
+		};
+		05A2747C28F80C10000DFA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.BetssonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betsson.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Betsson";
+			};
+			name = Release;
+		};
+		05A2747E28F80C10000DFA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.BetssonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Betsson;
+			};
+			name = Debug;
+		};
+		05A2747F28F80C10000DFA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akrzyz.BetssonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Betsson;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05A2744828F80C0E000DFA37 /* Build configuration list for PBXProject "Betsson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A2747528F80C10000DFA37 /* Debug */,
+				05A2747628F80C10000DFA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A2747728F80C10000DFA37 /* Build configuration list for PBXNativeTarget "Betsson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A2747828F80C10000DFA37 /* Debug */,
+				05A2747928F80C10000DFA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A2747A28F80C10000DFA37 /* Build configuration list for PBXNativeTarget "BetssonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A2747B28F80C10000DFA37 /* Debug */,
+				05A2747C28F80C10000DFA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A2747D28F80C10000DFA37 /* Build configuration list for PBXNativeTarget "BetssonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A2747E28F80C10000DFA37 /* Debug */,
+				05A2747F28F80C10000DFA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05A2744528F80C0E000DFA37 /* Project object */;
+}

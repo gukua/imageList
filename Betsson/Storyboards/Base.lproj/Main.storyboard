@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c5d-0J-r2W">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo List View Controller-->
+        <scene sceneID="eWZ-zg-q9m">
+            <objects>
+                <collectionViewController id="rmB-lP-tTj" customClass="PhotoListViewController" customModule="Betsson" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UY0-0D-zeu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qwV-1L-HjK">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="PWo-fV-0DV" customClass="PhotoCell" customModule="Betsson" customModuleProvider="target">
+                                <rect key="frame" x="95" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I6c-Ff-IfZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPv-1r-w4f">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mPv-1r-w4f" firstAttribute="leading" secondItem="I6c-Ff-IfZ" secondAttribute="leading" id="B4R-kk-E7M"/>
+                                        <constraint firstItem="mPv-1r-w4f" firstAttribute="top" secondItem="I6c-Ff-IfZ" secondAttribute="top" id="Mgf-hh-wrA"/>
+                                        <constraint firstAttribute="trailing" secondItem="mPv-1r-w4f" secondAttribute="trailing" id="RgL-cd-l6p"/>
+                                        <constraint firstAttribute="bottom" secondItem="mPv-1r-w4f" secondAttribute="bottom" id="VJx-CS-qMP"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="mPv-1r-w4f" id="eIN-3P-8Mw"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rmB-lP-tTj" id="Iaa-TR-goG"/>
+                            <outlet property="delegate" destination="rmB-lP-tTj" id="Kvr-up-ceN"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="2yl-Qx-pFY"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n03-6I-fLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136.9230769230767" y="15.639810426540283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kCv-Pj-0og">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5d-0J-r2W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FEb-bJ-FNz">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rmB-lP-tTj" kind="relationship" relationship="rootViewController" id="Isk-fy-Q5v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAr-oL-hSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207.6923076923076" y="15.639810426540283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
